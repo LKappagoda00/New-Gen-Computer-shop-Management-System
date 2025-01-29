@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: var(--font-family);
-  background:linear-gradient(to left,#14fefe,#29526c);
+  background:linear-gradient(to left,#148dfe,#1a4e6e);
 }
 
 section {
@@ -45,14 +45,14 @@ section {
 
 .container {
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin:  auto;
+  padding: 20px;
 }
 
 .--pad {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
+  padding:20px;
 }
 
 .header {

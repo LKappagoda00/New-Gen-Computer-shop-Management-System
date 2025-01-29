@@ -1,49 +1,183 @@
-.hero {
-  display:flex;
+/* General Styles */
+* {
+  box-sizing: border-box;
+ 
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #142e54;
+  color: #140505;
   justify-content: center;
   align-items: center;
-  background-color:white;
-  min-height: 80vh;
+}
+
+.container {
+  max-width: 1200px;
+  
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 80px 40px; /* Increased padding for larger content */
+  background: linear-gradient(135deg, #1a0038, #002092);
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   /* More space at the bottom */
 }
 
 .hero-text {
-  width: 50%;
-  & > * {
-    color: #333;
-    margin-bottom: 2rem;
-  }
-  & > h2 span {
-    display: block;
-  }
-  & .hero-buttons a {
-    color: white;
-  }
+  max-width: 50%;
+  padding-right: 40px;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a11cb, #4a90e2); /* Linear gradient for text */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent;
 }
-.hero-image {
-  width: 50%;
-  text-align: center;
+
+.hero-text h1 {
+  font-size: 4rem; /* Increased font size for the main heading */
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  -webkit-background-clip: text; /* Apply gradient to text */
+  color: transparent;
+  text-shadow: 2px 3px 9px rgba(0, 0, 0, 0.3);
 }
+
+
+.hero-text p {
+  font-size: 1.5rem; /* Increased font size for paragraph */
+  margin-bottom: 30px;
+  margin-left: 40px;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f06, #48c6ef); /* Add gradient to the paragraph */
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 3px 9px rgba(0, 0, 0, 0.3);
+
+  
+}
+
+
+.btn-log-reg {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-log-reg button {
+  background: linear-gradient(135deg, #38145f, #26486f);;
+  color: white;
+  padding: 15px 35px; /* Increased padding for a more substantial button */
+  font-size: 1.2rem; /* Increased button text size */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 2, 5, 0.2);
+  align-items: center;
+  justify-content: center;
+  
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  background-color: #07213c;
+  color: white;
+  padding: 15px 35px; /* Increased padding for a more substantial button */
+  font-size: 1.2rem; /* Increased button text size */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
 .hero-image img {
-  width: 80%;
+  max-width: 400px; /* Increased max-width for a larger image */
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin: auto;
 }
-@media screen and (max-width: 600px) {
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Feedback Button */
+
+
+.btn-log:hover {
+  background: linear-gradient(135deg, #581e95, #447dbe);;
+  transform: translateY(-2px);
+}
+
+/* Link Styling */
+button a, .btn-log a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    text-align: center;
+    padding: 50px 20px; /* Reduced padding on mobile */
   }
 
   .hero-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-    text-align: center;
+    max-width: 100%;
+    padding-right: 0;
   }
-  .hero-image {
-    width: 100%;
-    &img {
-      width: 100%;
-    }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-image img {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+
+  /* Increase text sizes on smaller screens for better readability */
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+
+  .hero-buttons button {
+    font-size: 1.1rem;
+  }
+
+  .btn-log {
+    font-size: 1.1rem;
   }
 }

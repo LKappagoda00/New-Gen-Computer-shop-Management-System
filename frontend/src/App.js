@@ -13,7 +13,7 @@ import Profile from "./pages/profile/Profile";
 import UserList from "./pages/userList/UserList";
 import axios from "axios";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
