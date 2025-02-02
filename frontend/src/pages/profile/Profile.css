@@ -2,10 +2,10 @@
   .card {
     width: 100%;
     max-width: 400px;
-    padding: 1rem;
+    background: linear-gradient(135deg, #1a0038, #002092);
     border: 1px solid #030b6b;
-   margin-left:275px;
-    
+justify-content: center;  
+align-items: center;  
   }
   .profile-photo {
     width: 100%;
@@ -25,7 +25,7 @@
     }
 
     & h3 {
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: 2rem;
       text-align: center;
     }
@@ -35,7 +35,7 @@
       display: block;
       font-size: 1.4rem;
       font-weight: 500;
-      background-color: #d7d4d4;
+      color: white;
     }
     input[type="text"],
     input[type="phone"],
@@ -58,6 +58,16 @@
 
      textarea {
      width: 100%;
+     background: linear-gradient(135deg, #cba6f6, #5a7cf7);
+
    }
   }
+  
+  h2{
+    align-items: center;
+    justify-content: center;
+  }
+  input{
+    background: linear-gradient(135deg, #cba6f6, #5a7cf7);
+   };
 }

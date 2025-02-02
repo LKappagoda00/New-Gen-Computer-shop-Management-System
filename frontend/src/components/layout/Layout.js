@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import toast from 'react-hot-toast';
 
 const Layout = ({ children }) => {
   return (
