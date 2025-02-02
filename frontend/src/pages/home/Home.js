@@ -13,11 +13,11 @@ const Home = () => {
           
           <div className="btn-log-reg">
       <button className="btn btn-log">
-        <NavLink to="/feedback">Login</NavLink>
+        <NavLink to="/login">Login</NavLink>
       </button>
       
       <button className="btn btn-log">
-        <NavLink to="/feedbackList">Register</NavLink>
+        <NavLink to="/register">Register</NavLink>
       </button>
       
       </div>

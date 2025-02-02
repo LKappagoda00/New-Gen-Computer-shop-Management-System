@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <h1 className="--color-white">Well Come To  &copy; NGC</h1>
+      <h1 className="--color-white">WelCome To NEW GEN COMPUTER</h1>
       <p className="text-center mt-3">
         <Link to="/about">About</Link>|<Link to="/contact">Contact</Link>|
         <Link to="/policy">Privacy Policy</Link>

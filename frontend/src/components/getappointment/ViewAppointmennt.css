@@ -1,15 +1,15 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(135deg, #1d165e, #a13bb0, #4b3860);
     color: #fff;
     margin: 0;
     padding: 0;
   }
   
   .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

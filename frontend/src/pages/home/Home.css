@@ -40,7 +40,7 @@ body {
   align-items: center;
   margin: auto;
   justify-content: center;
-  background: linear-gradient(135deg, #6a11cb, #4a90e2); /* Linear gradient for text */
+  background: linear-gradient(135deg, #5fdcff, #2ed2ff, #defff2); /* Linear gradient for text */
   -webkit-background-clip: text; /* Clip the background to the text */
   color: transparent;
 }
@@ -57,11 +57,11 @@ body {
 
 
 .hero-text p {
-  font-size: 1.5rem; /* Increased font size for paragraph */
+  font-size: 1.7rem; /* Increased font size for paragraph */
   margin-bottom: 30px;
   margin-left: 40px;
   line-height: 1.6;
-  background: linear-gradient(135deg, #f06, #48c6ef); /* Add gradient to the paragraph */
+  background: linear-gradient(135deg, rgb(0, 255, 64), #efef48); /* Add gradient to the paragraph */
   -webkit-background-clip: text;
   color: transparent;
   text-shadow: 2px 3px 9px rgba(0, 0, 0, 0.3);
